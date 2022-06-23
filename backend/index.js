@@ -15,10 +15,12 @@ app.use(bodyParser.json())
 
 app.use(express.urlencoded({ extended: true }))
 
+  
 app.use('/places', require('./controllers/places'))
 app.use('/users', require('./controllers/users'))
-app.use('/authenticaton', require ('./controllers/authentication'))
+app.use('/authentication', require('./controllers/authentication'))
+
 // Listen for Connections
 app.listen(process.env.PORT, () => {
-    console.log(`Listening on ${process.env.PORT}`)
+      console.log(`Listening on ${process.env.PORT}`)
 })

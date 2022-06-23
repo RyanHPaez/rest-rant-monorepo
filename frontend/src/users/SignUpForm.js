@@ -15,7 +15,7 @@ function SignUpForm() {
 	async function handleSubmit(e) {
 		e.preventDefault()
 // switched from users to user because it was not fetching
-		await fetch(`http://localhost:5000/user/`, {
+		await fetch(`http://localhost:5000/users/`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
