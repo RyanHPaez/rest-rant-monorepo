@@ -14,7 +14,7 @@ function SignUpForm() {
 
 	async function handleSubmit(e) {
 		e.preventDefault()
-
+// if you get error here is because you have to put queries in pg admin
 		await fetch(`http://localhost:5000/users/`, {
 			method: 'POST',
 			headers: {
@@ -36,7 +36,7 @@ function SignUpForm() {
 						<input
 							required
 							value={user.firstName}
-							onChange={e => setUser({ ...user, firstName: e.target.value })}
+							onChange={(e) => setUser({ ...user, firstName: e.target.value })}
 							className="form-control"
 							id="firstName"
 							name="firstName"
@@ -47,7 +47,7 @@ function SignUpForm() {
 						<input
 							required
 							value={user.lastName}
-							onChange={e => setUser({ ...user, lastName: e.target.value })}
+							onChange={(e) => setUser({ ...user, lastName: e.target.value })}
 							className="form-control"
 							id="lastName"
 							name="lastName"
@@ -61,7 +61,7 @@ function SignUpForm() {
 							type="email"
 							required
 							value={user.email}
-							onChange={e => setUser({ ...user, email: e.target.value })}
+							onChange={(e) => setUser({ ...user, email: e.target.value })}
 							className="form-control"
 							id="email"
 							name="email"
@@ -73,7 +73,7 @@ function SignUpForm() {
 							type="password"
 							required
 							value={user.password}
-							onChange={e => setUser({ ...user, password: e.target.value })}
+							onChange={(e) => setUser({ ...user, password: e.target.value })}
 							className="form-control"
 							id="password"
 							name="password"

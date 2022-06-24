@@ -1,5 +1,5 @@
 'use strict';
-
+// this is just for password 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     return queryInterface.addColumn('users', 'password_digest', {
