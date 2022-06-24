@@ -11,8 +11,7 @@ router.post('/', async (req, res) => {
         passwordDigest: await bcrypt.hash(password, 10)
     })
     res.json(user)
-})   
-
+})
 
 router.get('/', async (req, res) => {
     const users = await User.findAll()
