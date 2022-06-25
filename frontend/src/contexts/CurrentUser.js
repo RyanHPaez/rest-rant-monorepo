@@ -3,6 +3,7 @@ import { createContext, useState, useEffect } from "react";
 
 export const CurrentUser = createContext()
 
+
 function CurrentUserProvider({ children }) {
 
     const [currentUser, setCurrentUser] = useState(null)
@@ -17,9 +18,7 @@ function CurrentUserProvider({ children }) {
     }, [])
   
 
-        console.log("test2")
-    }, [])
-  
+   
 
   
 
