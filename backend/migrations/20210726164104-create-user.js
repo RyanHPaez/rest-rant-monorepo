@@ -1,5 +1,6 @@
 'use strict';
 //pg admin wants you to include all queries do not use cstring[] for datatype
+// added test
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('users', {
