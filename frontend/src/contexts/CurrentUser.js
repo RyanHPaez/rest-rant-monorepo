@@ -9,14 +9,20 @@ function CurrentUserProvider({ children }) {
     useEffect(() => {
 
         const getLoggedInUser = async () => {
+            console.log('test1')
+            //error here
             let response = await fetch('http://localhost:5000/authentication/profile', {
                 credentials: 'include'
             })
             let user = await response.json()
             setCurrentUser(user)
         }
+        //error here
         getLoggedInUser()
+        console.log("test2")
     }, [])
+  
+
   
 
   
