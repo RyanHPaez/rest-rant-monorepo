@@ -4,7 +4,6 @@ import { CurrentUser } from "../contexts/CurrentUser";
 import CommentCard from './CommentCard'
 import NewCommentForm from "./NewCommentForm";
 
-
 function PlaceDetails() {
 
 	const { placeId } = useParams()
@@ -72,6 +71,8 @@ function PlaceDetails() {
 		})
 
 	}
+
+
 
 	let comments = (
 		<h3 className="inactive">

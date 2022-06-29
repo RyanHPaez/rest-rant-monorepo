@@ -17,10 +17,16 @@ module.exports = (sequelize, DataTypes) => {
       autoIncrement: true
 
     },
-    //pgadmin does not except cstring[]
     firstName: DataTypes.STRING,
     lastName: DataTypes.STRING,
     email: DataTypes.STRING,
+    role: {
+      type: DataTypes.ENUM,
+      values: [
+        'reviewer',
+        'admin',
+      ],
+    },
     passwordDigest: DataTypes.STRING
   }, {
     sequelize,
