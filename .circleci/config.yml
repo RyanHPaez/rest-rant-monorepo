@@ -10,8 +10,8 @@ workflows:
       - eb/deploy:
           app-dir: ~/project/backend
           context: aws-creds
-          application-name: Project
-          environment-name: project-env
+          application-name: rest-rant-monorepo
+          environment-name: Restrantmonorepo-env
           filters:
             branches:
               only:
